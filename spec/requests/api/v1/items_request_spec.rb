@@ -23,4 +23,8 @@ describe 'Items API' do
     expect(response).to be_success
     expect(item["id"]).to eq(id)
   end
+
+  it "can create a new item" do
+    item_params = { name: "Black Panther", description: "Wakanda Forever" }
+  end
 end

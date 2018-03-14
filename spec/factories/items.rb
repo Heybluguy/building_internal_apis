@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :item do
-    name "Banana Stand"
-    description "There's always money in the banana stand business"
+    name "Vibranium Stand"
+    description "There's always money in the vibranium business"
   end
 end
