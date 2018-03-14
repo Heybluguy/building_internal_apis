@@ -31,6 +31,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'nyan-cat-formatter'
+  gem 'pry'
 end
 
 group :development do
