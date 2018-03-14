@@ -26,5 +26,12 @@ describe 'Items API' do
 
   it "can create a new item" do
     item_params = { name: "Black Panther", description: "Wakanda Forever" }
+
+    post "/api/v1/items", params: {item: item_params}
+    item = Item.last
+
+    assert_response :success
+    expect(response).to be_success
+    expect(item.name).to eq(item_params[:name])
   end
 end
