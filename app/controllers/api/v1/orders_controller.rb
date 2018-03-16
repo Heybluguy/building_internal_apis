@@ -4,6 +4,6 @@ class Api::V1::OrdersController < ApplicationController
   end
 
   def show
-    render json: Order.find(parmas[:id])
+    render json: Order.find(params[:id])
   end
 end

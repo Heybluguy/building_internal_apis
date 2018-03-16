@@ -11,7 +11,10 @@ RSpec.describe Api::V1::OrdersController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      get :show
+      order = create(:order)
+
+      get :show, params:{id: order.id}
+
       expect(response).to have_http_status(:success)
     end
   end
